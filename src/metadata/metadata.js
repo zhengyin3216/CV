@@ -7,7 +7,7 @@ module.exports = {
   facts: {
     Phone: '010-2909-3216',
     Email: '<a href="mailto:zhengyin3216@naver.com">zhengyin3216@naver.com</a>',
-    'Google Scholar': '<a href="https://scholar.google.com/scholar?q=Soree+Hwang">Soree Hwang</a>',
+    'Google Scholar': '<a href="https://scholar.google.com/citations?user=VkT2eyAAAAAJ&hl=ko&oi=ao">Soree Hwang</a>',
   },
   skills: [
     ['React Native', 90],
