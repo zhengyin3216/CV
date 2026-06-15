@@ -1,68 +1,234 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: '황소리 | Soree Hwang',
+
+  eng_name: 'Soree Hwang',
+  title: '- Product Builder, Medical AI Researcher (Ph.D.)',
+  lang: 'kor',
   facts: {
-    'Residence': '<a href="https://www.google.com/maps/place/London,+UK/@51.5285582,-0.2416814,11z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862"><i class="fa fa-home fact-icon"></i>London</a>',
-    'Wiki': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <i class="fa-brands fa-wikipedia-w fact-icon"></i>William_Shakespeare
-                </a>`,
-    'Twitter': `<a href="https://twitter.com/shakespeare"><i class="fa-brands fa-twitter fact-icon"></i>Shakespeare</a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com"><i class="fa fa-envelope fact-icon"></i>wil64@yahoo.com</a>'
+    Phone: '010-2909-3216',
+    Email: '<a href="mailto:zhengyin3216@naver.com">zhengyin3216@naver.com</a>',
+    'Google Scholar': '<a href="https://scholar.google.com/scholar?q=Soree+Hwang">Soree Hwang</a>',
   },
   skills: [
-    ['Comedy', 100],
-    ['Love', 100],
-    ['Theater', 100],
-    ['Tragedy', 100],
-    ['Poetry', 100],
-    ['Erotic', 60],
-    ['Sonnets', 100],
-    ['Plays', 100],
-    ['Writing', 100],
-    ['Directing', 80],
-    ['Literature', 100],
-    ['Influence', 100],
+    ['React Native', 90],
+    ['Supabase', 80],
+    ['OpenAI/RAG', 85],
+    ['Claude Code', 75],
+
+    ['Python', 80],
+    ['ML/DL', 85],
+    ['Computer Vision', 80],
+    ['sEMG/IMU 신호처리', 90],
+
+    ['임상시험 설계', 85],
+    ['IRB 관리', 80],
+    ['데이터 파이프라인', 75],
+    ['프로덕트 기획', 85],
+
+    ['TDS/UI 디자인', 70],
+    ['수익화 설계', 75],
+    ['마케팅', 70],
+    ['논문 작성', 95],
+  ],
+  memo: [
+    `Product Builder · Medical AI Researcher (Ph.D.)`,
+    `기획·디자인·개발·수익화를 혼자 End-to-End로 실행하는 프로덕트 빌더`,
+    `생체신호 기반 의료 AI를 임상검증까지 수행한 박사`,
+    `헬스케어를 연구로도, 제품으로도 직접 해본 사람`,
+    `논문 총 13편(주저자 5편), SCIE 9편(주저자 3편)`,
+    `특허 등록 3건·출원 3건`,
   ],
   positions: [
     {
-      title: 'Hamlet',
-      period: 'Likely early 17th century',
-      skills: ['tragedy', 'philosophy', 'death'],
-      contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
-`
+      company: '케어노트 (CareNote)',
+      location: '토스 미니앱 (Apps-in-Toss)',
+      title: '1인 개발·운영',
+      period: '2026.06 ~ 현재',
+      skills: ['React Native', 'Granite', 'TDS', 'Supabase', 'OpenAI/RAG', 'SSE', '토스 로그인', 'IAP', 'Claude Code'],
+      contents: `검증된 의학정보(RAG) 기반 채팅 건강 기록·맞춤 안내 앱 — 기획·디자인·개발·수익화·마케팅 전 과정 단독(E2E)`,
+      detail: [
+        'RAG 채팅 건강 기록·맞춤 안내: 검증된 의학 정보(RAG, 약 18.5만 청크) 기반 OpenAI 프록시 + SSE 스트리밍 구현',
+        '활성화 온보딩 퍼널(웰컴 → 토스 로그인 → 프로필 → 첫 기록 → AI 결과 → 구독) 설계 및 TDS 기반 UI 구현',
+        '처방전 사진 한 장으로 약 정보를 인식해 복약 스케줄 자동 생성 기능 구현',
+        '3티어 구독(무료 / Family / Plus) + ad-gated 무료 모델 직접 설계',
+        '의료법 회피 표현 정리, AI 생성 이미지 디지털 워터마크 등 도메인 리스크 선제 처리',
+        '출시 약 1주 내 가입 55명 달성 (광고비 0, 직접 채널 운영)',
+        '온보딩 이탈 지점 발견 → 결제 제안을 가치 경험 이후로 재배치해 초기 이탈 제거',
+      ],
     },
     {
-      title: 'Twelfth Night',
-      period: '1600 – 1601',
-      skills: ['comedy', 'love'],
-      contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
-`
+      company: '뚜벅이육아',
+      location: '웹 → 토스 미니앱 (React Native)',
+      title: '1인 개발·운영',
+      period: '2026.06 ~ 현재',
+      skills: ['React Native', 'Granite', 'Supabase', '외부 데이터 프록시'],
+      contents: `서울 육아시설 찾기 서비스 — 기획·개발·마케팅 단독`,
+      detail: [
+        '빠른 웹앱으로 가설 검증 후 토스 미니앱(React Native)으로 포팅',
+        '가입 게이트, 외부 데이터(시설·공휴일 등) 프록시까지 1인 구축',
+        '서울시 한정 서비스 특성에 맞춰 타깃 채널·메시지 최적화',
+        '출시 약 1주 내 가입 31명 달성 (케어노트 합산 86명)',
+      ],
     },
     {
-      title: 'The Tragedy of Romeo and Juliet',
-      period: '1595–1596, with a possible early draft written in 1591',
-      skills: ['tragedy', 'death', 'love'],
-      contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
-`
-    }
+      company: '모두의연구소 아이펠 (AIFFEL)',
+      location: '원격',
+      title: 'AI 리서처 16기',
+      period: '2026.01 ~ 현재',
+      skills: ['DINOv2', 'DINOv3', 'Computer Vision', 'focal loss', 'Python'],
+      contents: `철스크랩 등급 이미지 분류 · 컴퓨터비전 리서치 (팀 4인)`,
+      detail: [
+        '자기지도학습 백본(DINOv2/DINOv3) 기반 철스크랩 등급 이미지 분류 모델 연구',
+        '임베딩 유사도 기반 클러스터(cluster_id) 단위 train/val 분할로 데이터 누수 제거',
+        '재라벨 캠페인(v1→v3)으로 오라벨 정정 및 위험 등급 표본 보강',
+        'focal loss 도입으로 소수·위험 등급 검출 성능 개선',
+      ],
+    },
+    {
+      company: '한국과학기술연구원(KIST) 바이오닉스연구센터',
+      location: 'KIST',
+      title: '학생연구원',
+      period: '2022.05 ~ 2026.02',
+      skills: ['sEMG', 'IMU', 'Python', 'ML/DL', 'CNN-LSTM-Attention', '임상시험 설계', 'IRB'],
+      contents: `생체신호 기반 의료 AI 알고리즘 연구·임상검증`,
+      detail: [
+        '뇌졸중 환자 생체신호 기반 신경 가소성 정량 평가 및 재활 상태 예측 AI 알고리즘 설계·검증',
+        '저주파(≤50Hz) IMU 기반 이상 보행 판별·재활 모니터링 알고리즘 개발, 재택·비대면 진료 환경 적용 실증 참여',
+        'sEMG·IMU 시계열 기반 fatigue·stress·abnormal gait 평가 모델 개발',
+        '임상시험 프로토콜 설계 및 IRB 관리, 생체신호 데이터 수집·전처리·분석 파이프라인 구축',
+      ],
+    },
+    {
+      company: '㈜웨이트어박스',
+      location: '',
+      title: '연구원',
+      period: '2022.01 ~ 2022.04',
+      skills: ['IMU', '보행 분석', 'ML'],
+      contents: `운동 신호 기반 뇌졸중 중증도 평가 알고리즘 개발`,
+      detail: [
+        '운동 신호 기반 뇌졸중 중증도 평가 알고리즘 개발',
+        'gait feature engineering 및 ML 분류 모델 설계',
+        '임상시험 운영·데이터 관리',
+        '저주파 IMU 센서 기반 보행 분석 알고리즘 개발, 적외선 3D 모션 캡처 대비 정확도 검증',
+      ],
+    },
+    {
+      company: 'KIST 바이오닉스연구센터',
+      location: 'KIST',
+      title: '위촉연구원',
+      period: '2020.03 ~ 2021.12',
+      skills: ['sEMG', 'IMU', '생체신호 처리', '임상데이터 관리'],
+      contents: `생체신호 기반 헬스케어 연구 참여`,
+      detail: [
+        '고위험군 산모 건강관리 AI, 경찰 맞춤형 라이프로그·스트레스 케어 등 정부 R&D 과제 참여',
+        '생체신호 데이터 수집·전처리·분석',
+      ],
+    },
   ],
-  experience: [
+  education: [
     {
-      header: 'Performance',
-      skills: ['theater', 'play'],
-      contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
+      period: '2026.01 ~ ',
+      university: '모두의연구소 아이펠 (AIFFEL)',
+      major: 'AI 리서처 16기',
     },
     {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
-      contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. I dedicated them to Henry Wriothesley, Earl of Southampton.
-`
-    }
-  ]
+      period: '2021.09 ~ 2026.02',
+      university: '고려대학교 바이오의공학과',
+      major: '박사 — 착용형 센서를 이용한 하지 관절 제한 및 피로 조건 보행 기능 저하 평가',
+    },
+    {
+      period: '2018.03 ~ 2020.02',
+      university: '서울과학기술대학교 디자인기술융합학과',
+      major: '석사',
+    },
+    {
+      period: '2011.03 ~ 2017.02',
+      university: '한국항공대학교 기계공학과',
+      major: '학사',
+    },
+  ],
+  release: [
+    {
+      type: 'thesis / 논문',
+      title: 'A multimodal fatigue detection system using sEMG and IMU signals with a hybrid CNN-LSTM-attention model',
+      url: 'https://doi.org/10.3390/s25113309',
+      date: '2025, Sensors, 25(11):3309 (주저자, SCIE)',
+    },
+    {
+      type: 'thesis / 논문',
+      title: 'Machine learning-based abnormal gait classification with IMU considering joint impairment',
+      url: 'https://doi.org/10.3390/s24175571',
+      date: '2024, Sensors, 24(17):5571 (주저자, SCIE)',
+    },
+    {
+      type: 'thesis / 논문',
+      title: 'IEEE Access, Frontiers in Human Neuroscience, Acta Psychologica 등 공저 다수',
+      url: 'https://scholar.google.com/scholar?q=Soree+Hwang',
+      date: '총 13편 (주저자 5편) · SCIE 9편 (주저자 3편)',
+    },
+    {
+      type: 'patent / 특허 (등록)',
+      title: '머신러닝 기반 단일 관성측정장치 헬스케어 시스템',
+      url: '',
+      date: '2023',
+    },
+    {
+      type: 'patent / 특허 (등록)',
+      title: '운동/뇌파 분석 재활 모니터링 시스템',
+      url: '',
+      date: '2023',
+    },
+    {
+      type: 'patent / 특허 (등록)',
+      title: '균형 능력 평가 장치 및 방법',
+      url: '',
+      date: '2022',
+    },
+    {
+      type: 'patent / 특허 (출원)',
+      title: '비대면 진료 보조 시스템',
+      url: '',
+      date: '2024',
+    },
+    {
+      type: 'patent / 특허 (출원)',
+      title: '맞춤형 디지털 헬스케어 시스템 및 방법',
+      url: '',
+      date: '2024',
+    },
+    {
+      type: 'patent / 특허 (출원)',
+      title: '맞춤형 건강 관리 시스템',
+      url: '',
+      date: '2024',
+    },
+  ],
+  certifications: [],
+  addExperience: [
+    {
+      type: 'R&D',
+      title: '뇌졸중 재택 모니터링 기반 비대면 진료 보조 (과기정통부)',
+      url: '',
+      date: '',
+    },
+    {
+      type: 'R&D',
+      title: '맞춤형 신경 가소성 평가 기반 뇌졸중 장애극복 (과기정통부)',
+      url: '',
+      date: '',
+    },
+    {
+      type: 'R&D',
+      title: '고위험군 산모 건강관리 AI (과기정통부)',
+      url: '',
+      date: '',
+    },
+    {
+      type: 'R&D',
+      title: '경찰 맞춤형 라이프로그·스트레스 케어 (경찰청)',
+      url: '',
+      date: '',
+    },
+  ],
+  award: [],
 };
