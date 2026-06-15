@@ -114,11 +114,28 @@
         <ul>
           {{#each education}}
             <i class="fab {{this.icon}}"></i>
-            {{ this.major }}. {{this.university}} [{{this.period}}]
+                <li>{{ this.major }}. {{this.university}} [{{this.period}}]</li>
           {{/each}}
         </ul>
     </div>
 
+    <h2 class="mb-4">Additional Experience</h2>
+
+    {{#if experience}}
+    {{#each experience}}
+    <div class="mb-4">
+        <h3 class="fs-4 fw-normal">{{ header }}</h3>
+
+        {{{markdown contents }}}
+
+        <div>
+            {{#each skills }}
+            <span class="badge text-body border border-1">{{ this }}</span>
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+    {{/if}}
     
     {{#if release}}
     <h2>Release</h2>
@@ -135,7 +152,21 @@
     </ul>
     {{/if}}
 
+    {{#if Certifications}}
+    <h2>Certifications</h2>
+    <ul>
+       {{#each certifications}}
+       <li><i class="fab {{this.icon}}"></i> 
+        {{#if this.url}} 
+	    <a href="{{this.url}}">
+        {{/if}}
+        {{this.title}}</a> - {{this.date}}
+       </li>
+       {{/each}}
+    </ul>
+    {{/if}}
 
+    {{#if addExperience}}
     <h2>Additional Experience</h2>
     <ul>
         {{#each addExperience}}
