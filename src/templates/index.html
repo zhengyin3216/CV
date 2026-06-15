@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YFTH3CQ367"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-');
+</script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ name }}. {{ title }}</title>
@@ -35,7 +45,7 @@
                 </div>
             </div>
             <div class="col-4 col-md-3 col-lg-2 offset-lg-1 d-none d-md-block align-md-self-center text-center">
-                <img src="photo.jpg" class="rounded-circle img-fluid" alt="Personal photo">
+                <img src="photo.png" class="rounded-circle img-fluid" alt="Personal photo">
             </div>
             <div class="col-print-6 col-12 col-md-5 offset-lg-1 col-lg-4">
                 <ul class="list-group list-group-flush">
@@ -67,23 +77,27 @@
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
-    </div>
+        introduce <br/>
+        {{#each memo }}
+        {{ this }}</br>
+        {{/each}}
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <h2 class="mb-4">Professional Experience</h2>
         {{#each positions}}
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
+            
             <div class="col-md-2 pt-1">
                 {{ period }}
             </div>
             <div class="col-md-10">
+                <h3>{{ company }}</h3>
                 <h3 class="fs-4 fw-normal">{{ title }}</h3>
 
                 <div>{{{markdown contents }}}</div>
+                {{#each detail }}
+                <li>{{ this }}</li>
+                {{/each}}
 
                 <p>
                     {{#each skills }}
@@ -97,7 +111,12 @@
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <h2 class="mb-4">Education</h2>
-        <div>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</div>
+        <ul>
+          {{#each education}}
+            <i class="fab {{this.icon}}"></i>
+            {{ this.major }}. {{this.university}} [{{this.period}}]
+          {{/each}}
+        </ul>
     </div>
 
     <h2 class="mb-4">Additional Experience</h2>
@@ -115,6 +134,61 @@
         </div>
     </div>
     {{/each}}
+    
+    {{#if release}}
+    <h2>Release</h2>
+    <ul>
+        {{#each release}}
+        <li><i class="fab {{this.icon}}"></i>
+        [{{this.type}}]
+        {{#if this.url}}
+            <a href="{{this.url}}">
+        {{/if}}
+            {{this.title}}</a> - {{this.date}}
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+
+    <h2>Certifications</h2>
+    <ul>
+       {{#each certifications}}
+       <li><i class="fab {{this.icon}}"></i> 
+        {{#if this.url}} 
+	    <a href="{{this.url}}">
+        {{/if}}
+        {{this.title}}</a> - {{this.date}}
+       </li>
+       {{/each}}
+    </ul>
+
+    {{#if addExperience}}
+    <h2>Additional Experience</h2>
+    <ul>
+        {{#each addExperience}}
+        <li><i class="fab {{this.icon}}"></i>
+            [{{this.type}}]
+            {{#if this.url}}
+                <a href="{{this.url}}">
+            {{/if}}
+            {{this.title}}</a> - {{this.date}}
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+    {{#if award}}
+    <h2>Award</h2>
+    <ul>
+        {{#each award}}
+        <li><i class="fab {{this.icon}}"></i>
+        {{#if this.url}}
+            <a href="{{this.url}}">
+        {{/if}}
+        {{this.title}}</a> - {{this.date}}
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
 </div>
 </body>
 </html>
